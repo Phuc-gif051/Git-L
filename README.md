@@ -8,3 +8,4 @@
 # 6. dùng git add . để tiến hành push tất cả lên git hoặc git add tên_file để add file xác định
 # 7. để commit dùng lệnh git commit - m "nội dung của commit"
 # 8. push file lên git dùng git push tên_remote tên_branch
+#
