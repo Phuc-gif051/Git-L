@@ -1,6 +1,18 @@
 https://mega.nz/file/IU53TCKC#3SvPYKB3JVQ-tQX9kKGh7ljhYdoEldC4suhalC60yo4
 
 ```sh
+dism /online /set-edition:Windows 10 Pro /productkey:W269N-WFGWX-YVC9B-4J6C9-T83GX /accepteula
+```
+
+or
+
+```sh
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+```
+
+<https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys>
+
+```sh
 [DEFAULT]
 username=Administrators
 groups=Administrators
