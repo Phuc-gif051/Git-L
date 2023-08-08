@@ -24,11 +24,10 @@ bsdtar_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\bin\bsdtar.exe
 mtools_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\bin\
 san_policy=OnlineAll
 metadata_services=cloudbaseinit.metadata.services.configdrive.ConfigDriveService,cloudbaseinit.metadata.services.ec2service.EC2Service
-#,cloudbaseinit.metadata.services.httpservice.HttpService
-#,cloudbaseinit.metadata.services.maasservice.MaaSHttpService
+,cloudbaseinit.metadata.services.httpservice.HttpService,cloudbaseinit.metadata.services.maasservice.MaaSHttpService
 metadata_base_url=http://169.254.169.254/
-ec2_metadata_base_url=http://169.254.0.23/
-retry_count=2
+#ec2_metadata_base_url=http://169.254.0.23/
+retry_count=40
 retry_count_interval=5
 plugins=cloudbaseinit.plugins.windows.extendvolumes.ExtendVolumesPlugin,cloudbaseinit.plugins.common.networkconfig.NetworkConfigPlugin,cloudbaseinit.plugins.common.sethostname.SetHostNamePlugin,cloudbaseinit.plugins.common.setuserpassword.SetUserPasswordPlugin,cloudbaseinit.plugins.common.localscripts.LocalScriptsPlugin,cloudbaseinit.plugins.common.userdata.UserDataPlugin
 verbose=true
@@ -47,6 +46,8 @@ local_scripts_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScri
 C:\powershell
 PS C:\Set-ExecutionPolicy Unrestricted
 volumes_to_extend=1,2
+[openstack]
+add_metadata_private_ip_route=False
 ```
 
 
