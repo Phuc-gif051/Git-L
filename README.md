@@ -32,6 +32,8 @@ logging_serial_port_settings=COM1,115200,N,8
 mtu_use_dhcp_config=true
 ntp_use_dhcp_config=true
 local_scripts_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts\
+C:\powershell
+C:\Set-ExecutionPolicy Unrestricted
 
 ```
 
