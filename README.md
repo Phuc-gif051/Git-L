@@ -17,7 +17,7 @@ slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 username=Administrators
 groups=Administrators
 inject_user_password=true
-first_logon_behaviour=no
+first_logon_behaviour=always
 config_drive_raw_hhd=true
 config_drive_cdrom=true
 config_drive_vfat=true
@@ -28,6 +28,7 @@ metadata_services=cloudbaseinit.metadata.services.configdrive.ConfigDriveService
 metadata_base_url=http://169.254.169.254/
 retry_count=2
 retry_count_interval=5
+#plugins=cloudbaseinit.plugins.windows.extendvolumes.ExtendVolumesPlugin,cloudbaseinit.plugins.common.networkconfig.NetworkConfigPlugin,cloudbaseinit.plugins.common.sethostname.SetHostNamePlugin,cloudbaseinit.plugins.common.setuserpassword.SetUserPasswordPlugin,cloudbaseinit.plugins.common.localscripts.LocalScriptsPlugin,cloudbaseinit.plugins.common.userdata.UserDataPlugin
 plugins=cloudbaseinit.plugins.common.localscripts.LocalScriptsPlugin,cloudbaseinit.plugins.common.mtu.MTUPlugin,cloudbaseinit.plugins.windows.createuser.CreateUserPlugin,cloudbaseinit.plugins.common.setuserpassword.SetUserPasswordPlugin,cloudbaseinit.plugins.common.sshpublickeys.SetUserSSHPublicKeysPlugin,cloudbaseinit.plugins.common.sethostname.SetHostNamePlugin,cloudbaseinit.plugins.windows.extendvolumes.ExtendVolumesPlugin,cloudbaseinit.plugins.common.userdata.UserDataPlugin,cloudbaseinit.plugins.windows.winrmlistener.ConfigWinRMListenerPlugin,cloudbaseinit.plugins.windows.winrmcertificateauth.ConfigWinRMCertificateAuthPlugin,cloudbaseinit.plugins.windows.licensing.WindowsLicensingPlugin
 verbose=true
 debug=true
@@ -40,6 +41,7 @@ ntp_use_dhcp_config=true
 local_scripts_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts\
 C:\powershell
 PS C:\Set-ExecutionPolicy Unrestricted
+
 volumes_to_extend=1,2
 [openstack]
 add_metadata_private_ip_route=False
