@@ -1,3 +1,5 @@
+1.1.2: <https://mega.nz/file/IcQiVDCR#NdO3exgJXnMW2Fih0l1gLxpi7WXGXx6Sow1OWrEe3gk>
+
 https://mega.nz/file/IU53TCKC#3SvPYKB3JVQ-tQX9kKGh7ljhYdoEldC4suhalC60yo4
 
 beta <https://mega.nz/file/4QoV2abD#8sVYVDU7laBjBjYOVXm0ONNhQZxxN8X3RzdvK7Vt-ko>
