@@ -51,7 +51,7 @@ ntp_use_dhcp_config=true
 local_scripts_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts\
 C:\powershell
 PS C:\Set-ExecutionPolicy Unrestricted
-C:\user administrator / active:yes
+C:\net user administrator /active:yes
 volumes_to_extend=1,2
 [openstack]
 add_metadata_private_ip_route=False
