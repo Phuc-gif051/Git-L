@@ -21,7 +21,7 @@ slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 username=Administrators
 groups=Administrators
 inject_user_password=true
-first_logon_behaviour=always
+first_logon_behaviour=no
 config_drive_raw_hhd=true
 config_drive_cdrom=true
 config_drive_vfat=true
@@ -51,7 +51,7 @@ ntp_use_dhcp_config=true
 local_scripts_path=C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts\
 C:\powershell
 PS C:\Set-ExecutionPolicy Unrestricted
-C:\net user administrator /active:yes
+PS C:\net user administrator /active:yes
 volumes_to_extend=1,2
 [openstack]
 add_metadata_private_ip_route=False
