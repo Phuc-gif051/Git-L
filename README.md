@@ -16,6 +16,8 @@ slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 
 <https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys>
 
+### Cloudbase-init config
+
 ```sh
 [DEFAULT]
 username=Administrators
