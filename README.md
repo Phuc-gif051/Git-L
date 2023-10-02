@@ -1,3 +1,8 @@
+growpart (to extend partition on linux)
+
+guid: <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html>
+trouble shoot: <https://unix.stackexchange.com/questions/687485/ubuntu-ext4-partition-is-not-being-extended-or-resized-as-expected-with-growpart>
+
 1.1.2: <https://mega.nz/file/IcQiVDCR#NdO3exgJXnMW2Fih0l1gLxpi7WXGXx6Sow1OWrEe3gk>
 
 https://mega.nz/file/IU53TCKC#3SvPYKB3JVQ-tQX9kKGh7ljhYdoEldC4suhalC60yo4
